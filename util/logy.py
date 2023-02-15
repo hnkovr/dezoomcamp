@@ -1,24 +1,22 @@
 import functools
 import sys
 
-from loguru import logger
 from loguru import logger as log
+
 from util.printy import fmt_a_or_kw, value_shortext
 
-log = logger
-# format = '{time:YY/MM/DD HH:mm:ss} {level.name[0]} file://{file.path} :{line} {message}'
-# format = '{time:YY/MM/DD HH:mm:ss} {level.name[0]} "{file.path}:{line}" {message}'
 format = '{time:YY/MM/DD HH:mm:ss} {level.name[0]} "{file.path}", line {line}: {message}'
+format = None
 
 log.remove()  # remove any existing handlers
-log.add(
-    sys.stdout,
+kwargs = dict(
     format=format,
     level="DEBUG",
     backtrace=True,
     diagnose=True,
-    colorize=True,
-)
+    colorize=True, )
+if not format: del kwargs['format']
+log.add(sys.stdout, **kwargs)
 log.debug(f"{ format=}")
 
 

@@ -1,7 +1,13 @@
+USE_LOGURU=True
 import functools
+import logging
+import loguru
 import sys
 
-from loguru import logger as log
+if USE_LOGURU:
+    from loguru import logger as log
+else:
+    log = logging.getLogger(__name__)
 
 from util.printy import fmt_a_or_kw, value_shortext
 
@@ -45,3 +51,10 @@ def _log_args_and_result(func):
 
 
 call_log = _log_args_and_result
+if loguru.logger == log:
+    ef = log.catch
+else:
+    def ef(f):
+        def w(*a, **k): return f(*a, **k)
+
+        return w

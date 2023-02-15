@@ -12,7 +12,8 @@ Data can be found here: https://github.com/DataTalksClub/nyc-tlc-data/releases/t
 ## Question 1:
 What is the count for fhv vehicle records for year 2019?
 - 65,623,481
-- 43,244,696
+
+- ___- 43,244,696___ *
 - 22,978,333
 - 13,942,414
 
@@ -23,12 +24,12 @@ What is the estimated amount of data that will be read when this query is execut
 - 25.2 MB for the External Table and 100.87MB for the BQ Table
 - 225.82 MB for the External Table and 47.60MB for the BQ Table
 - 0 MB for the External Table and 0MB for the BQ Table
-- 0 MB for the External Table and 317.94MB for the BQ Table 
+- ___0 MB for the External Table and 317.94MB for the BQ Table___ *
 
 
 ## Question 3:
 How many records have both a blank (null) PUlocationID and DOlocationID in the entire dataset?
-- 717,748
+- ___717,748___ *
 - 1,215,687
 - 5
 - 20,332
@@ -36,7 +37,7 @@ How many records have both a blank (null) PUlocationID and DOlocationID in the e
 ## Question 4:
 What is the best strategy to optimize the table if query always filter by pickup_datetime and order by affiliated_base_number?
 - Cluster on pickup_datetime Cluster on affiliated_base_number
-- Partition by pickup_datetime Cluster on affiliated_base_number
+- ___Partition by pickup_datetime Cluster on affiliated_base_number-___ *
 - Partition by pickup_datetime Partition by affiliated_base_number
 - Partition by affiliated_base_number Cluster on pickup_datetime
 
@@ -44,7 +45,7 @@ What is the best strategy to optimize the table if query always filter by pickup
 Implement the optimized solution you chose for question 4. Write a query to retrieve the distinct affiliated_base_number between pickup_datetime 2019/03/01 and 2019/03/31 (inclusive).</br> 
 Use the BQ table you created earlier in your from clause and note the estimated bytes. Now change the table in the from clause to the partitioned table you created for question 4 and note the estimated bytes processed. What are these values? Choose the answer which most closely matches.
 - 12.82 MB for non-partitioned table and 647.87 MB for the partitioned table
-- 647.87 MB for non-partitioned table and 23.06 MB for the partitioned table
+- ___647.87 MB for non-partitioned table and 23.06 MB for the partitioned table___ *
 - 582.63 MB for non-partitioned table and 0 MB for the partitioned table
 - 646.25 MB for non-partitioned table and 646.25 MB for the partitioned table
 
@@ -53,7 +54,7 @@ Use the BQ table you created earlier in your from clause and note the estimated 
 Where is the data stored in the External Table you created?
 
 - Big Query
-- GCP Bucket
+- ___GCP Bucket___ *
 - Container Registry
 - Big Table
 
@@ -61,7 +62,7 @@ Where is the data stored in the External Table you created?
 ## Question 7:
 It is best practice in Big Query to always cluster your data:
 - True
-- False
+- ___False___ *
 
 
 ## (Not required) Question 8:

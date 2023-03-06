@@ -4,6 +4,11 @@
 # Create a table in BQ using the fhv 2019 data (do not partition or cluster this table).
 # Data can be found here: https://github.com/DataTalksClub/nyc-tlc-data/releases/tag/fhv
 # from: file://Users/user/github.com/hnkovr/dezoomcamp/week_2_prefect/Q#1_Load_January_2020_data/1_etl_web_to_gcs.py
+
+#todo! try this code: https://chat.openai.com/chat/b1b1e0a0-5da2-403e-8c39-cca0bc0be8b8
+
+
+# /Users/user/github.com/hnkovr/dezoomcamp/week_3_dwh/1_load_data.py
 import functools
 import os
 from pathlib import Path

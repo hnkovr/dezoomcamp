@@ -1,0 +1,20 @@
+# pip==22.3.1
+# Pygments==2.14.0
+# setuptools==65.5.1
+# six==1.16.0
+# wheel==0.38.4
+fastcore
+loguru
+pandas
+
+pytest
+
+# prefect
+# prefect_gcp
+pandas==1.5.2
+prefect==2.7.7
+prefect-sqlalchemy==0.2.2
+prefect-gcp[cloud_storage]==0.2.3
+protobuf==4.21.11
+pyarrow==10.0.1
+pandas-gbq==0.19.0
